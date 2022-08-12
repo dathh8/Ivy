@@ -81,7 +81,7 @@ class cartegory {
        ORDER BY tbl_loaisanpham.loaisanpham_id DESC";
         $result = $this -> db->select($query);
         return $result;
-        //$query = "SELECT  tbl_sanpham.*,tbl_danhmuc.danhmuc_ten,tbl_danhmuc.danhmuc_id 
+//         $query = "SELECT  tbl_sanpham.*,tbl_danhmuc.danhmuc_ten,tbl_danhmuc.danhmuc_id 
         //FROM tbl_sanpham, tbl_danhmuc WHERE tbl_sanpham.danhmuc_id=tbl_danhmuc.danhmuc_id AND tbl_sanpham.danhmuc_id = '$cartegory_id'";
     }
     public function get_product_related($cartegory_id){
